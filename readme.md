@@ -1,6 +1,6 @@
 # Dan Miller's Individual Project
 
-Problemn Statement: 
+### Problemn Statement: 
 
 Many people enjoy hiking.  Getting in touch with nature by walking through 
 tree covered landscape listening to the sounds that aren’t often heard in 
