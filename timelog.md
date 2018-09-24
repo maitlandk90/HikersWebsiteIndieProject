@@ -2,4 +2,4 @@
 
 | Date | Task | Hours | Notes|
 |------|------|-------|------|
-| 1/18/16| Set up project repository, write problem statement, journal example, technologies used| 2 | |
+| 9/23/18| Added the problem statement to the readme file, created the time log, began working on the project plan| 2 | |

@@ -1,4 +1,4 @@
-Dan Miller's Individual Project
+# Dan Miller's Individual Project
 
 Problemn Statement: 
 
@@ -12,13 +12,18 @@ they had pictured in their mind, like a rushing river, a beautiful lake, or
 large trees filled with chirping birds lining the trail.  There are numerous 
 websites that give trail recommendations, but it seems like you have to go 
 to multiple websites to get the different pieces of information used to decide 
-if a trail is worth hiking.   
+if a trail is worth hiking or worth driving to.   
 
 I’d like to create a website that hopefully gives the hiking enthusiast a one 
 stop shop option where they can find most of the information needed to choose 
-next hiking adventure.  This would include information such as the trail 
-length and difficulty.  An explanation of what types of natural beauty can 
-be seen from the trail.  Whether the trail is family friendly or will have 
-features that would peak the interest of young and older kids alike.  
-Recommendations and reviews from other hikers and families.  Users will also 
-able to save their favorite trails and give them a rating.  
+their next hiking adventure.  This would include information such as... 
+    
+    - Trail length and difficulty  
+    - An explanation of what types of natural beauty can be seen from the trail.  
+    - Whether the trail is family friendly or will have features that would peak 
+      the interest of young and older kids alike
+    - Directions to the trailhead as well as distance and driving time  
+    - Recommendations and reviews from other hikers and families  
+    
+Users will also be able to save their favorite trails, give them a rating, and add a written 
+review of the trail.  
