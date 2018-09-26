@@ -42,11 +42,9 @@
 - [ ] Deploy to AWS for first time
 - [ ] Weekly journal entry
 - [ ] Create hiking trail table
-- [ ] Add the trail entity (test, dev and prod dbs)
 - [ ] Realize that these daos are repetitive. Refactor into a generic dao!
 - [ ] Add update and delete functionality in jsp for user and role
-- [ ] Build the trail search jsp
-- [ ] Build the trail add/update/delete jsp
+- [ ] Build the hiking trail search jsp
 - [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
@@ -55,10 +53,7 @@
 - [ ] Weekly journal entry
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
-- [ ] Add the Trail Type and Grooming Tables, populate with data, (test, dev and prod dbs)
-- [ ] Create the Trail Type and Grooming entities
-- [ ] Update Trail and Trail report to use trail type and grooming
-- [ ] Update Trail and Trail report tests to be sure they work with the new relationships
+- [ ] Add the Hiking Trail Tables, populate with data, (test, dev and prod dbs)
 - [ ] Review and incorporate any feedback from Checkpoint 2.
 
 
@@ -67,16 +62,16 @@
 - [ ] Weekly journal entry
 - [ ] Integration with google maps api
 - [ ] Create trail report table (test, dev and prod dbs)
-- [ ] Add the trail report entity
-- [ ] Create the trail report dao
-- [ ] Create the trail report dao unit tests
-- [ ] Build the trail report search jsp
-- [ ] Build the trail report crud jsps
+- [ ] Add the hiking trail details entity
+- [ ] Create the hiking trail details dao
+- [ ] Create the trail details dao unit tests
+- [ ] Build the Hiking Trail search jsp
 - [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
 
 ### Week 9
 - [ ] Weekly journal entry
-- [ ] Integration with weather service and/or snow depth data
+- [ ] Integration with weather service.
+- [ ] Integration with Hiking Trails API.
 - [ ] Review and incorporate feedback from Checkpoint 3.
 - [ ] Carefully review code for standards and best practices - use a code quality tool? 
 
