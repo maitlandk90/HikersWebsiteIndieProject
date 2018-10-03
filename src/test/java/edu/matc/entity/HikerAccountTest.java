@@ -8,21 +8,21 @@ import static org.junit.jupiter.api.Assertions.*;
 class HikerAccountTest {
 
     @Test
-    void getAge() {
+    void getEmailAddress() {
         // create the object that has the method that I want to test
         HikerAccount hikerAccount = new HikerAccount();
 
-        // set birthdate for the user
-        LocalDate birthdate = LocalDate.parse("1968-01-01");
-        hikerAccount.setDateOfBirth(birthdate);
+        // set the email address of the hiker
+        String emailAddress = "kskippy77@hotmail.com";
+        hikerAccount.setEmailAddress(emailAddress);
 
         // create a variable for the expected value
-        int expectedAge = 50;
+        String expectedEmailAddress = "kskippy77@hotmail.com";
 
-        // call the method and get the actual value
-        int actualAge = hikerAccount.getAge();
+        // call the method and get the actual value"
+        String actualEmailAddress = hikerAccount.getEmailAddress();
 
         // compare the two, pass or fail
-        assertEquals(expectedAge, actualAge);
+        assertEquals(expectedEmailAddress, actualEmailAddress);
     }
 }

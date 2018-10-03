@@ -45,59 +45,59 @@ public class HikerAccountDao {
     }
 
     /**
-     * Gets a user by id
-     * @return a user
+     * Gets a hiker account by id
+     * @return a hiker account
      */
 
     public HikerAccount getById(int id) {
 
         Session session = sessionFactory.openSession();
-        HikerAccount user = session.get(HikerAccount.class, id);
+        HikerAccount hikerAccount = session.get(HikerAccount.class, id);
         session.close();
-        return user;
+        return hikerAccount;
     }
 
 
     /**
-     * update user
-     * @param user  User to be inserted or updated
+     * update hiker account
+     * @param hikerAccount  Hiker Account to be inserted or updated
      */
-    public void saveOrUpdate(HikerAccount user) {
+    public void saveOrUpdate(HikerAccount hikerAccount) {
         Session session = sessionFactory.openSession();
-        session.saveOrUpdate(user);
+        session.saveOrUpdate(hikerAccount);
         session.close();
     }
 
     /**
-     * update user
-     * @param user  User to be inserted or updated
+     * update hiker acccount
+     * @param hikerAccount  Hiker account to be inserted or updated
      */
-    public int insert(HikerAccount user) {
+    public int insert(HikerAccount hikerAccount) {
         int id = 0;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        id = (int)session.save(user);
+        id = (int)session.save(hikerAccount);
         transaction.commit();
         session.close();
         return id;
     }
 
     /**
-     * Delete a user
-     * @param user User to be deleted
+     * Delete a hiker account
+     * @param hikerAccount Hiker account to be deleted
      */
-    public void delete(HikerAccount user) {
+    public void delete(HikerAccount hikerAccount) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.delete(user);
+        session.delete(hikerAccount);
         transaction.commit();
         session.close();
     }
 
 
-    /** Return a list of all users
+    /** Return a list of all hiker accounts
      *
-     * @return All users
+     * @return All hiker accounts
      */
     public List<HikerAccount> getAll() {
 
@@ -106,41 +106,41 @@ public class HikerAccountDao {
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<HikerAccount> query = builder.createQuery( HikerAccount.class );
         Root<HikerAccount> root = query.from( HikerAccount.class );
-        List<HikerAccount> users = session.createQuery( query ).getResultList();
+        List<HikerAccount> hikerAccounts = session.createQuery( query ).getResultList();
 
-        logger.debug("The list of users " + users);
+        logger.debug("The list of hiker accounts " + hikerAccounts);
         session.close();
 
-        return users;
+        return hikerAccounts;
     }
 
     /**
-     * Get user by property (exact match)
+     * Get hiker account by property (exact match)
      * sample usage: getByPropertyEqual("lastname", "Curry")
      */
     public List<HikerAccount> getByPropertyEqual(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
-        logger.debug("Searching for user with " + propertyName + " = " + value);
+        logger.debug("Searching for hiker account with " + propertyName + " = " + value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<HikerAccount> query = builder.createQuery( HikerAccount.class );
         Root<HikerAccount> root = query.from( HikerAccount.class );
         query.select(root).where(builder.equal(root.get(propertyName), value));
-        List<HikerAccount> users = session.createQuery( query ).getResultList();
+        List<HikerAccount> hikerAccounts = session.createQuery( query ).getResultList();
 
         session.close();
-        return users;
+        return hikerAccounts;
     }
 
     /**
-     * Get user by property (like)
+     * Get hiker account by property (like)
      * sample usage: getByPropertyLike("lastname", "C")
      */
     public List<HikerAccount> getByPropertyLike(String propertyName, String value) {
         Session session = sessionFactory.openSession();
 
-        logger.debug("Searching for user with {} = {}",  propertyName, value);
+        logger.debug("Searching for hiker account with {} = {}",  propertyName, value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<HikerAccount> query = builder.createQuery( HikerAccount.class );
@@ -149,9 +149,9 @@ public class HikerAccountDao {
 
         query.where(builder.like(propertyPath, "%" + value + "%"));
 
-        List<HikerAccount> users = session.createQuery( query ).getResultList();
+        List<HikerAccount> hikerAccounts = session.createQuery( query ).getResultList();
         session.close();
-        return users;
+        return hikerAccounts;
     }
 
 }

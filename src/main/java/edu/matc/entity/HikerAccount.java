@@ -8,11 +8,11 @@ import java.time.Period;
 
 
 /**
- * A class to represent a user.
+ * A class to represent a hiker account.
  *
- * @author pwaite
+ * @author dmiller
  */
-@Entity(name = "User")
+@Entity(name = "HikerAccount")
 @Table(name = "Hiker_Account")
 public class HikerAccount {
     @Column(name = "first_name")
@@ -21,16 +21,19 @@ public class HikerAccount {
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "user_name")
-    private String userName;
+    @Column(name = "city")
+    private String city;
+
+    @Column(name = "state")
+    private String state;
+
+    @Column(name = "email_address")
+    private String emailAddress;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
-
-    @Column(name = "date_of_birth")
-    private LocalDate dateOfBirth;
 
 
     /**
@@ -44,15 +47,17 @@ public class HikerAccount {
      *
      * @param firstName the first name
      * @param lastName  the last name
-     * @param userName  the user name
-     * @param dateOfBirth the date of birth
+     * @param city  the city
+     * @param state the state
+     * @param emailAddress the email address
      * @param id        the id
      */
-    public HikerAccount(String firstName, String lastName, String userName, LocalDate dateOfBirth, int id) {
+    public HikerAccount(String firstName, String lastName, String city, String state, String emailAddress, int id) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.userName = userName;
-        this.dateOfBirth = dateOfBirth;
+        this.city = city;
+        this.state = state;
+        this.emailAddress = emailAddress;
         this.id = id;
     }
 
@@ -94,43 +99,61 @@ public class HikerAccount {
     }
 
     /**
-     * Gets user name.
+     * Gets city.
      *
-     * @return the user name
+     * @return the city
      */
-    public String getUserName() {
-        return userName;
+    public String getCity() {
+        return city;
     }
 
     /**
-     * Sets user name.
+     * Sets city.
      *
-     * @param userName the user name
+     * @param city the city
      */
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     /**
-     * Gets date of birth.
+     * Gets state.
      *
-     * @return the date of birth
+     * @return the state
      */
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
+    public String getState() {
+        return state;
     }
 
     /**
-     * Sets date of birth.
+     * Sets state.
      *
-     * @param dateOfBirth the date of birth
+     * @param state the state
      */
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setState(String state) {
+        this.state = state;
     }
 
     /**
-     * Gets id.public class User {
+     * Gets email address.
+     *
+     * @return the email address
+     */
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    /**
+     * Sets email address.
+     *
+     * @param emailAddress the email address
+     */
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    /**
+     * Gets id.
 
      *
      * @return the id
@@ -148,30 +171,16 @@ public class HikerAccount {
         this.id = id;
     }
 
-    /**
-     * Calculates age.
-     *
-     * @return the age
-     */
-    public int getAge() {
-        int age;
-
-        age = Period.between(dateOfBirth,LocalDate.now()).getYears();
-
-        //age = LocalDate.now().minus(Period.of(dateOfBirth.getYear(), dateOfBirth.getMonthValue(), dateOfBirth.getDayOfMonth())).getYear();
-
-        return age;
-    }
 
     @Override
     public String toString() {
-        return "User{" +
+        return "HikerAccount{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", userName='" + userName + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
+                ", city='" + city + '\'' +
+                ", state ='" + state + '\'' +
+                ", emailAddress = '" + emailAddress + '\'' +
                 ", id=" + id + '\'' +
-                ", age=" + getAge() +
                 '}';
     }
 }

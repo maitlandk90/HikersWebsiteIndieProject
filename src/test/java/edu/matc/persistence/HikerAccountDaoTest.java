@@ -26,21 +26,21 @@ class HikerAccountDaoTest {
     }
 
     @Test
-    void getAllUsersSuccess() {
-        List<HikerAccount> users = dao.getAllHikerAccounts();
-        assertEquals(6, users.size());
+    void getAllHikerAccountsSuccess() {
+        List<HikerAccount> hikerAccounts = dao.getAllHikerAccounts();
+        assertEquals(6, hikerAccounts.size());
     }
 
     @Test
-    void getUsersByLastNameSuccess() {
-        List<HikerAccount> users = dao.getHikerAccountsByLastName("c");
-        assertEquals(3, users.size());
+    void getHikerAccountsByLastNameSuccess() {
+        List<HikerAccount> hikerAccounts = dao.getHikerAccountsByLastName("c");
+        assertEquals(3, hikerAccounts.size());
     }
 
     @Test
     void getByIdSuccess() {
-        HikerAccount retrievedUser = dao.getById(3);
-        assertNotNull(retrievedUser);
-        assertEquals("Barney", retrievedUser.getFirstName());
+        HikerAccount retrievedHikerAccount = dao.getById(1);
+        assertNotNull(retrievedHikerAccount);
+        assertEquals("Joe", retrievedHikerAccount.getFirstName());
     }
 }

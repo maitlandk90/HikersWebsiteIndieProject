@@ -15,9 +15,9 @@ import java.util.Properties;
 
 /**
  * Provides access the database
- * Created on 8/31/16.
+ * Created on 10/1/18.
  *
- * @author pwaite
+ * @author dmiller
  */
 
 public class Database {
