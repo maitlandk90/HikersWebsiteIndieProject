@@ -37,13 +37,13 @@ public class HikerAccount {
 
 
     /**
-     * Instantiates a new User.
+     * Instantiates a new Hiker Account.
      */
     public HikerAccount() {
     }
 
     /**
-     * Instantiates a new User.
+     * Instantiates a new Hiker Account.
      *
      * @param firstName the first name
      * @param lastName  the last name
