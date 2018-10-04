@@ -8,19 +8,19 @@
 - [ ] Determine possible Web Services or APIs to use
 - [ ] List technologies, versions and how they will be used
 - [X] Weekly journal entry
-- [ ] Write project plan
-- [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq? 
-- [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
+- [X] Write project plan
+- [X] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq? 
+- [X] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
 
 ### Week 4
 - [ ] Complete database design
-- [ ] Create the database and user table
-- [ ] Create the user entity class and annotate for hibernate
-- [ ] Create user dao
-- [ ] Create the test database
+- [X] Create the database and user table
+- [X] Create the user entity class and annotate for hibernate
+- [X] Create user dao
+- [X] Create the test database
 - [ ] Create user dao unit tests
-- [ ] Weekly journal entry
-- [ ] Set up logging
+- [X] Weekly journal entry
+- [X] Set up logging
 - [ ] Create class uml diagram
 - [ ] Prepare for Week 5 peer design/code review
 
