@@ -5,6 +5,8 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**
@@ -35,6 +37,8 @@ public class HikerAccount {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @OneToMany(mappedBy = "hikerAccount", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<HikingTrails> hikingTrails = new HashSet<>();
 
     /**
      * Instantiates a new Hiker Account.
@@ -45,12 +49,12 @@ public class HikerAccount {
     /**
      * Instantiates a new Hiker Account.
      *
-     * @param firstName the first name
-     * @param lastName  the last name
-     * @param city  the city
-     * @param state the state
+     * @param firstName    the first name
+     * @param lastName     the last name
+     * @param city         the city
+     * @param state        the state
      * @param emailAddress the email address
-     * @param id        the id
+     * @param id           the id
      */
     public HikerAccount(String firstName, String lastName, String city, String state, String emailAddress, int id) {
         this.firstName = firstName;
@@ -154,7 +158,6 @@ public class HikerAccount {
 
     /**
      * Gets id.
-
      *
      * @return the id
      */
@@ -169,6 +172,44 @@ public class HikerAccount {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    /**
+     * Gets hiking trails.
+     *
+     * @return the hiking trails
+     */
+    public Set<HikingTrails> getHikingTrails() {
+        return hikingTrails;
+    }
+
+    /**
+     * Sets hiking trails.
+     *
+     * @param hikingTrails the hiking trails
+     */
+    public void setHikingTrails(Set<HikingTrails> hikingTrails) {
+        this.hikingTrails = hikingTrails;
+    }
+
+    /**
+     * Add hiking trail.
+     *
+     * @param hikingTrail the hiking trail
+     */
+    public void addHikingTrail(HikingTrails hikingTrail) {
+        hikingTrails.add(hikingTrail);
+        hikingTrail.setHikerAccount(this);
+    }
+
+    /**
+     * Remove hiking trail.
+     *
+     * @param hikingTrail the hiking trail
+     */
+    public void removeHikingTrail(HikingTrails hikingTrail) {
+        hikingTrails.remove(hikingTrail);
+        hikingTrail.setHikerAccount(null);
     }
 
 

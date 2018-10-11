@@ -919,56 +919,131 @@
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
     <table id="231" parent="2" name="Hiker_Account"/>
-    <column id="232" parent="231" name="id">
+    <table id="232" parent="2" name="Hiking_Trails"/>
+    <column id="233" parent="231" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="231" name="first_name">
+    <column id="234" parent="231" name="first_name">
       <Position>2</Position>
       <DataType>varchar(25)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="231" name="last_name">
+    <column id="235" parent="231" name="last_name">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="231" name="city">
+    <column id="236" parent="231" name="city">
       <Position>4</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="236" parent="231" name="state">
+    <column id="237" parent="231" name="state">
       <Position>5</Position>
       <DataType>varchar(2)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="237" parent="231" name="email_address">
+    <column id="238" parent="231" name="email_address">
       <Position>6</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="231" name="password">
+    <column id="239" parent="231" name="password">
       <Position>7</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="239" parent="231" name="hikers_email_address_uindex">
+    <index id="240" parent="231" name="hikers_email_address_uindex">
       <ColNames>email_address</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="240" parent="231" name="PRIMARY">
+    <key id="241" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="241" parent="231" name="hikers_email_address_uindex">
+    <key id="242" parent="231" name="hikers_email_address_uindex">
       <ColNames>email_address</ColNames>
       <UnderlyingIndexName>hikers_email_address_uindex</UnderlyingIndexName>
     </key>
+    <column id="243" parent="232" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="244" parent="232" name="hiker_account_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="245" parent="232" name="trail_head_name">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="246" parent="232" name="trail_description">
+      <Position>4</Position>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="247" parent="232" name="trail_length">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="248" parent="232" name="trail_difficulty">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="232" name="trail_rating">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="250" parent="232" name="trail_features">
+      <Position>8</Position>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="251" parent="232" name="trail_details">
+      <Position>9</Position>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="252" parent="232" name="Hiking_Trails_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="253" parent="232" name="Hiking_Trails_Hiker_Account_id_fk">
+      <ColNames>hiker_account_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="254" parent="232" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="255" parent="232" name="Hiking_Trails_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>Hiking_Trails_id_uindex</UnderlyingIndexName>
+    </key>
+    <foreign-key id="256" parent="232" name="Hiking_Trails_Hiker_Account_id_fk">
+      <ColNames>hiker_account_id</ColNames>
+      <RefSchemaName>HikerWebsiteDB</RefSchemaName>
+      <RefTableName>Hiker_Account</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
   </database-model>
 </dataSource>

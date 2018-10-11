@@ -1,0 +1,1002 @@
+[DEBUG] 2018-10-10 17:11:46.519 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2018-10-10 17:11:46.527 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2018-10-10 17:11:46.535 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2018-10-10 17:11:46.624 [main] Version - HHH000412: Hibernate Core {5.2.12.Final}
+[INFO ] 2018-10-10 17:11:46.625 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2018-10-10 17:11:46.671 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2018-10-10 17:11:46.672 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2018-10-10 17:11:46.679 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2018-10-10 17:11:47.045 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2018-10-10 17:11:47.160 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2018-10-10 17:11:47.179 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[DEBUG] 2018-10-10 17:11:47.228 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@58e1d9d
+[DEBUG] 2018-10-10 17:11:47.228 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@58e1d9d
+[DEBUG] 2018-10-10 17:11:47.229 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@58e1d9d
+[DEBUG] 2018-10-10 17:11:47.230 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@47caedad
+[DEBUG] 2018-10-10 17:11:47.231 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@126253fd
+[DEBUG] 2018-10-10 17:11:47.232 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@5c86a017
+[DEBUG] 2018-10-10 17:11:47.234 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4dc27487
+[DEBUG] 2018-10-10 17:11:47.234 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4dc27487
+[DEBUG] 2018-10-10 17:11:47.235 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4dc27487
+[DEBUG] 2018-10-10 17:11:47.236 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@6933b6c6
+[DEBUG] 2018-10-10 17:11:47.236 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@6933b6c6
+[DEBUG] 2018-10-10 17:11:47.236 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6933b6c6
+[DEBUG] 2018-10-10 17:11:47.238 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@d23e042
+[DEBUG] 2018-10-10 17:11:47.238 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@d23e042
+[DEBUG] 2018-10-10 17:11:47.238 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@d23e042
+[DEBUG] 2018-10-10 17:11:47.239 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@6cd24612
+[DEBUG] 2018-10-10 17:11:47.239 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@6cd24612
+[DEBUG] 2018-10-10 17:11:47.239 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6cd24612
+[DEBUG] 2018-10-10 17:11:47.242 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@14bdbc74
+[DEBUG] 2018-10-10 17:11:47.242 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@14bdbc74
+[DEBUG] 2018-10-10 17:11:47.246 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@14bdbc74
+[DEBUG] 2018-10-10 17:11:47.248 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@508dec2b
+[DEBUG] 2018-10-10 17:11:47.248 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@508dec2b
+[DEBUG] 2018-10-10 17:11:47.248 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@508dec2b
+[DEBUG] 2018-10-10 17:11:47.249 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7486b455
+[DEBUG] 2018-10-10 17:11:47.249 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7486b455
+[DEBUG] 2018-10-10 17:11:47.250 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7486b455
+[DEBUG] 2018-10-10 17:11:47.251 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@69ee81fc
+[DEBUG] 2018-10-10 17:11:47.251 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@69ee81fc
+[DEBUG] 2018-10-10 17:11:47.252 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@29f7cefd
+[DEBUG] 2018-10-10 17:11:47.252 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@29f7cefd
+[DEBUG] 2018-10-10 17:11:47.253 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@13d73f29
+[DEBUG] 2018-10-10 17:11:47.253 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@13d73f29
+[DEBUG] 2018-10-10 17:11:47.254 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2fb0623e
+[DEBUG] 2018-10-10 17:11:47.258 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@311bf055
+[DEBUG] 2018-10-10 17:11:47.259 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@78452606
+[DEBUG] 2018-10-10 17:11:47.259 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@78452606
+[DEBUG] 2018-10-10 17:11:47.329 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@7098b907
+[DEBUG] 2018-10-10 17:11:47.329 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7098b907
+[DEBUG] 2018-10-10 17:11:47.367 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@e3b3b2f
+[DEBUG] 2018-10-10 17:11:47.367 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@e3b3b2f
+[DEBUG] 2018-10-10 17:11:47.377 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1a5b6f42
+[DEBUG] 2018-10-10 17:11:47.378 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1a5b6f42
+[DEBUG] 2018-10-10 17:11:47.382 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4b8729ff
+[DEBUG] 2018-10-10 17:11:47.382 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4b8729ff
+[DEBUG] 2018-10-10 17:11:47.389 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2bdd8394
+[DEBUG] 2018-10-10 17:11:47.390 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2bdd8394
+[DEBUG] 2018-10-10 17:11:47.393 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@41488b16
+[DEBUG] 2018-10-10 17:11:47.393 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@41488b16
+[DEBUG] 2018-10-10 17:11:47.397 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@22f59fa
+[DEBUG] 2018-10-10 17:11:47.397 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@22f59fa
+[DEBUG] 2018-10-10 17:11:47.404 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@53f3bdbd
+[DEBUG] 2018-10-10 17:11:47.404 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@53f3bdbd
+[DEBUG] 2018-10-10 17:11:47.409 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@4ef74c30
+[DEBUG] 2018-10-10 17:11:47.409 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@4ef74c30
+[DEBUG] 2018-10-10 17:11:47.413 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@536dbea0
+[DEBUG] 2018-10-10 17:11:47.415 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@536dbea0
+[DEBUG] 2018-10-10 17:11:47.417 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@18ece7f4
+[DEBUG] 2018-10-10 17:11:47.417 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@18ece7f4
+[DEBUG] 2018-10-10 17:11:47.417 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@18ece7f4
+[DEBUG] 2018-10-10 17:11:47.421 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@33f676f6
+[DEBUG] 2018-10-10 17:11:47.435 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@2e570ded
+[DEBUG] 2018-10-10 17:11:47.435 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2e570ded
+[DEBUG] 2018-10-10 17:11:47.435 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2e570ded
+[DEBUG] 2018-10-10 17:11:47.436 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@747f281
+[DEBUG] 2018-10-10 17:11:47.436 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@2ca923bb
+[DEBUG] 2018-10-10 17:11:47.439 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@2ca923bb
+[DEBUG] 2018-10-10 17:11:47.439 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@7de62196
+[DEBUG] 2018-10-10 17:11:47.439 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@7de62196
+[DEBUG] 2018-10-10 17:11:47.446 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@389b0789
+[DEBUG] 2018-10-10 17:11:47.447 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@389b0789
+[DEBUG] 2018-10-10 17:11:47.447 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@51bd8b5c
+[DEBUG] 2018-10-10 17:11:47.448 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@51bd8b5c
+[DEBUG] 2018-10-10 17:11:47.450 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1ec9bd38
+[DEBUG] 2018-10-10 17:11:47.451 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1ec9bd38
+[DEBUG] 2018-10-10 17:11:47.452 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6f8e8894
+[DEBUG] 2018-10-10 17:11:47.453 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@471a9022
+[DEBUG] 2018-10-10 17:11:47.453 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@471a9022
+[DEBUG] 2018-10-10 17:11:47.457 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@471a9022
+[DEBUG] 2018-10-10 17:11:47.458 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4b2c5e02
+[DEBUG] 2018-10-10 17:11:47.458 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4b2c5e02
+[DEBUG] 2018-10-10 17:11:47.458 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4b2c5e02
+[DEBUG] 2018-10-10 17:11:47.458 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@6531a794
+[DEBUG] 2018-10-10 17:11:47.459 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@102cec62
+[DEBUG] 2018-10-10 17:11:47.459 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@19b89d4
+[DEBUG] 2018-10-10 17:11:47.459 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@19b89d4
+[DEBUG] 2018-10-10 17:11:47.460 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@19b89d4
+[DEBUG] 2018-10-10 17:11:47.460 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@14f232c4
+[DEBUG] 2018-10-10 17:11:47.460 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@14f232c4
+[DEBUG] 2018-10-10 17:11:47.460 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@14f232c4
+[DEBUG] 2018-10-10 17:11:47.463 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@7ba8c737
+[DEBUG] 2018-10-10 17:11:47.463 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@31edaa7d
+[DEBUG] 2018-10-10 17:11:47.469 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@1df8b5b8
+[DEBUG] 2018-10-10 17:11:47.469 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1df8b5b8
+[DEBUG] 2018-10-10 17:11:47.469 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@37911f88
+[DEBUG] 2018-10-10 17:11:47.473 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@1130520d
+[DEBUG] 2018-10-10 17:11:47.473 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1130520d
+[DEBUG] 2018-10-10 17:11:47.475 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@14a50707
+[DEBUG] 2018-10-10 17:11:47.475 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@14a50707
+[DEBUG] 2018-10-10 17:11:47.476 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@e3c0e40
+[DEBUG] 2018-10-10 17:11:47.477 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@20d7d6fb
+[DEBUG] 2018-10-10 17:11:47.478 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@5d43661b
+[DEBUG] 2018-10-10 17:11:47.481 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@7b7fdc8
+[DEBUG] 2018-10-10 17:11:47.482 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7b7fdc8
+[DEBUG] 2018-10-10 17:11:47.482 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@766653e6
+[DEBUG] 2018-10-10 17:11:47.482 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4e07b95f
+[DEBUG] 2018-10-10 17:11:47.482 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@28b46423
+[DEBUG] 2018-10-10 17:11:47.482 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7fc4780b
+[DEBUG] 2018-10-10 17:11:47.482 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3b79fd76
+[DEBUG] 2018-10-10 17:11:47.482 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@48c76607
+[DEBUG] 2018-10-10 17:11:47.482 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@43599640
+[DEBUG] 2018-10-10 17:11:47.482 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1f81aa00
+[INFO ] 2018-10-10 17:11:47.538 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/HikerWebsiteDB
+[INFO ] 2018-10-10 17:11:47.539 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {user=root, password=****}
+[INFO ] 2018-10-10 17:11:47.539 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2018-10-10 17:11:47.711 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2018-10-10 17:11:47.990 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.7.23-0ubuntu0.16.04.1
+      major : 5
+      minor : 7
+[DEBUG] 2018-10-10 17:11:47.991 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.39 ( Revision: 3289a357af6d09ecc1a10fd3c26e95183e5790ad )
+      major : 5
+      minor : 1
+[DEBUG] 2018-10-10 17:11:47.991 [main] JdbcEnvironmentInitiator - JDBC version : 4.0
+[INFO ] 2018-10-10 17:11:48.012 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[DEBUG] 2018-10-10 17:11:48.058 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2018-10-10 17:11:48.064 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2018-10-10 17:11:48.123 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2018-10-10 17:11:48.123 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2018-10-10 17:11:48.124 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2018-10-10 17:11:48.124 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2018-10-10 17:11:48.125 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2018-10-10 17:11:48.126 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2018-10-10 17:11:48.127 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2018-10-10 17:11:48.128 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2018-10-10 17:11:48.128 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2018-10-10 17:11:48.128 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2018-10-10 17:11:48.129 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2018-10-10 17:11:48.129 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2018-10-10 17:11:48.129 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2018-10-10 17:11:48.130 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[DEBUG] 2018-10-10 17:11:48.174 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2018-10-10 17:11:48.213 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.HikerAccount
+[DEBUG] 2018-10-10 17:11:48.244 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2018-10-10 17:11:48.250 [main] EntityBinder - Import with entity name HikerAccount
+[DEBUG] 2018-10-10 17:11:48.252 [main] EntityBinder - Bind entity edu.matc.entity.HikerAccount on table Hiker_Account
+[DEBUG] 2018-10-10 17:11:48.287 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.295 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2018-10-10 17:11:48.296 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikerAccount:id]
+[DEBUG] 2018-10-10 17:11:48.297 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2018-10-10 17:11:48.299 [main] PropertyBinder - Building property id
+[DEBUG] 2018-10-10 17:11:48.303 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=city, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.304 [main] PropertyBinder - MetadataSourceProcessor property city with lazy=false
+[DEBUG] 2018-10-10 17:11:48.304 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikerAccount:city]
+[DEBUG] 2018-10-10 17:11:48.304 [main] SimpleValueBinder - building SimpleValue for city
+[DEBUG] 2018-10-10 17:11:48.304 [main] PropertyBinder - Building property city
+[DEBUG] 2018-10-10 17:11:48.304 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=email_address, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.305 [main] PropertyBinder - MetadataSourceProcessor property emailAddress with lazy=false
+[DEBUG] 2018-10-10 17:11:48.305 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikerAccount:emailAddress]
+[DEBUG] 2018-10-10 17:11:48.305 [main] SimpleValueBinder - building SimpleValue for emailAddress
+[DEBUG] 2018-10-10 17:11:48.305 [main] PropertyBinder - Building property emailAddress
+[DEBUG] 2018-10-10 17:11:48.305 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.305 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2018-10-10 17:11:48.305 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikerAccount:firstName]
+[DEBUG] 2018-10-10 17:11:48.305 [main] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2018-10-10 17:11:48.306 [main] PropertyBinder - Building property firstName
+[DEBUG] 2018-10-10 17:11:48.307 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='hikerAccount'}
+[DEBUG] 2018-10-10 17:11:48.309 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=hikingTrails, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.310 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.323 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.323 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=hikingTrails_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.324 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='hikingTrails_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2018-10-10 17:11:48.324 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='hikerAccount'}
+[DEBUG] 2018-10-10 17:11:48.324 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='hikerAccount'}
+[DEBUG] 2018-10-10 17:11:48.325 [main] CollectionBinder - Collection role: edu.matc.entity.HikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:48.327 [main] PropertyBinder - Building property hikingTrails
+[DEBUG] 2018-10-10 17:11:48.327 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.327 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2018-10-10 17:11:48.327 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikerAccount:lastName]
+[DEBUG] 2018-10-10 17:11:48.327 [main] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2018-10-10 17:11:48.328 [main] PropertyBinder - Building property lastName
+[DEBUG] 2018-10-10 17:11:48.328 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiker_Account), mappingColumn=state, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.328 [main] PropertyBinder - MetadataSourceProcessor property state with lazy=false
+[DEBUG] 2018-10-10 17:11:48.328 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikerAccount:state]
+[DEBUG] 2018-10-10 17:11:48.328 [main] SimpleValueBinder - building SimpleValue for state
+[DEBUG] 2018-10-10 17:11:48.328 [main] PropertyBinder - Building property state
+[DEBUG] 2018-10-10 17:11:48.330 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.HikingTrails
+[DEBUG] 2018-10-10 17:11:48.331 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2018-10-10 17:11:48.331 [main] EntityBinder - Import with entity name HikingTrails
+[DEBUG] 2018-10-10 17:11:48.331 [main] EntityBinder - Bind entity edu.matc.entity.HikingTrails on table Hiking_Trails
+[DEBUG] 2018-10-10 17:11:48.337 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiking_Trails), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.337 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2018-10-10 17:11:48.337 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikingTrails:id]
+[DEBUG] 2018-10-10 17:11:48.337 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2018-10-10 17:11:48.337 [main] PropertyBinder - Building property id
+[DEBUG] 2018-10-10 17:11:48.337 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='hiker_account_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2018-10-10 17:11:48.337 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiking_Trails), mappingColumn=hikerAccount, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.338 [main] PropertyBinder - Building property hikerAccount
+[DEBUG] 2018-10-10 17:11:48.339 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiking_Trails), mappingColumn=trail_description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.339 [main] PropertyBinder - MetadataSourceProcessor property trailDescription with lazy=false
+[DEBUG] 2018-10-10 17:11:48.339 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikingTrails:trailDescription]
+[DEBUG] 2018-10-10 17:11:48.339 [main] SimpleValueBinder - building SimpleValue for trailDescription
+[DEBUG] 2018-10-10 17:11:48.339 [main] PropertyBinder - Building property trailDescription
+[DEBUG] 2018-10-10 17:11:48.339 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiking_Trails), mappingColumn=trail_details, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.339 [main] PropertyBinder - MetadataSourceProcessor property trailDetails with lazy=false
+[DEBUG] 2018-10-10 17:11:48.339 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikingTrails:trailDetails]
+[DEBUG] 2018-10-10 17:11:48.339 [main] SimpleValueBinder - building SimpleValue for trailDetails
+[DEBUG] 2018-10-10 17:11:48.339 [main] PropertyBinder - Building property trailDetails
+[DEBUG] 2018-10-10 17:11:48.340 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiking_Trails), mappingColumn=trail_difficulty, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.340 [main] PropertyBinder - MetadataSourceProcessor property trailDifficulty with lazy=false
+[DEBUG] 2018-10-10 17:11:48.340 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikingTrails:trailDifficulty]
+[DEBUG] 2018-10-10 17:11:48.340 [main] SimpleValueBinder - building SimpleValue for trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.340 [main] PropertyBinder - Building property trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.341 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiking_Trails), mappingColumn=trail_features, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.341 [main] PropertyBinder - MetadataSourceProcessor property trailFreatures with lazy=false
+[DEBUG] 2018-10-10 17:11:48.341 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikingTrails:trailFreatures]
+[DEBUG] 2018-10-10 17:11:48.341 [main] SimpleValueBinder - building SimpleValue for trailFreatures
+[DEBUG] 2018-10-10 17:11:48.341 [main] PropertyBinder - Building property trailFreatures
+[DEBUG] 2018-10-10 17:11:48.341 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiking_Trails), mappingColumn=trail_head_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.342 [main] PropertyBinder - MetadataSourceProcessor property trailHeadName with lazy=false
+[DEBUG] 2018-10-10 17:11:48.342 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikingTrails:trailHeadName]
+[DEBUG] 2018-10-10 17:11:48.342 [main] SimpleValueBinder - building SimpleValue for trailHeadName
+[DEBUG] 2018-10-10 17:11:48.343 [main] PropertyBinder - Building property trailHeadName
+[DEBUG] 2018-10-10 17:11:48.343 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiking_Trails), mappingColumn=trail_length, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.343 [main] PropertyBinder - MetadataSourceProcessor property trailLength with lazy=false
+[DEBUG] 2018-10-10 17:11:48.343 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikingTrails:trailLength]
+[DEBUG] 2018-10-10 17:11:48.343 [main] SimpleValueBinder - building SimpleValue for trailLength
+[DEBUG] 2018-10-10 17:11:48.345 [main] PropertyBinder - Building property trailLength
+[DEBUG] 2018-10-10 17:11:48.345 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Hiking_Trails), mappingColumn=trail_rating, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-10-10 17:11:48.345 [main] PropertyBinder - MetadataSourceProcessor property trailRating with lazy=false
+[DEBUG] 2018-10-10 17:11:48.345 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.HikingTrails:trailRating]
+[DEBUG] 2018-10-10 17:11:48.345 [main] SimpleValueBinder - building SimpleValue for trailRating
+[DEBUG] 2018-10-10 17:11:48.345 [main] PropertyBinder - Building property trailRating
+[DEBUG] 2018-10-10 17:11:48.346 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2018-10-10 17:11:48.346 [main] SimpleValueBinder - Starting fillSimpleValue for city
+[DEBUG] 2018-10-10 17:11:48.346 [main] SimpleValueBinder - Starting fillSimpleValue for emailAddress
+[DEBUG] 2018-10-10 17:11:48.346 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2018-10-10 17:11:48.346 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2018-10-10 17:11:48.346 [main] SimpleValueBinder - Starting fillSimpleValue for state
+[DEBUG] 2018-10-10 17:11:48.346 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2018-10-10 17:11:48.346 [main] SimpleValueBinder - Starting fillSimpleValue for trailDescription
+[DEBUG] 2018-10-10 17:11:48.346 [main] SimpleValueBinder - Starting fillSimpleValue for trailDetails
+[DEBUG] 2018-10-10 17:11:48.347 [main] SimpleValueBinder - Starting fillSimpleValue for trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.347 [main] SimpleValueBinder - Starting fillSimpleValue for trailFreatures
+[DEBUG] 2018-10-10 17:11:48.347 [main] SimpleValueBinder - Starting fillSimpleValue for trailHeadName
+[DEBUG] 2018-10-10 17:11:48.347 [main] SimpleValueBinder - Starting fillSimpleValue for trailLength
+[DEBUG] 2018-10-10 17:11:48.347 [main] SimpleValueBinder - Starting fillSimpleValue for trailRating
+[DEBUG] 2018-10-10 17:11:48.351 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [hiker_account]
+[DEBUG] 2018-10-10 17:11:48.352 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [hiking_trails]
+[DEBUG] 2018-10-10 17:11:48.353 [main] CollectionSecondPass - Second pass for collection: edu.matc.entity.HikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:48.356 [main] CollectionBinder - Binding a OneToMany: edu.matc.entity.HikerAccount.hikingTrails through a foreign key
+[DEBUG] 2018-10-10 17:11:48.356 [main] CollectionBinder - Mapping collection: edu.matc.entity.HikerAccount.hikingTrails -> Hiking_Trails
+[DEBUG] 2018-10-10 17:11:48.358 [main] TableBinder - Retrieving property edu.matc.entity.HikingTrails.hikerAccount
+[DEBUG] 2018-10-10 17:11:48.358 [main] CollectionSecondPass - Mapped collection key: hiker_account_id, one-to-many: edu.matc.entity.HikingTrails
+[DEBUG] 2018-10-10 17:11:48.358 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.HikerAccount
+[DEBUG] 2018-10-10 17:11:48.363 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.HikerAccount
+[DEBUG] 2018-10-10 17:11:48.404 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2018-10-10 17:11:48.405 [main] Settings - SessionFactory name : null
+[DEBUG] 2018-10-10 17:11:48.405 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2018-10-10 17:11:48.405 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2018-10-10 17:11:48.405 [main] Settings - Statistics: disabled
+[DEBUG] 2018-10-10 17:11:48.405 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2018-10-10 17:11:48.405 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2018-10-10 17:11:48.405 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2018-10-10 17:11:48.405 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2018-10-10 17:11:48.405 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2018-10-10 17:11:48.406 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2018-10-10 17:11:48.406 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2018-10-10 17:11:48.406 [main] Settings - Default null ordering: NONE
+[DEBUG] 2018-10-10 17:11:48.406 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2018-10-10 17:11:48.406 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2018-10-10 17:11:48.406 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Query language substitutions: {}
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - JPA query language strict compliance: disabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Named query checking : enabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Second-level cache: enabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@5fcacc0
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - JDBC batch size: 15
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2018-10-10 17:11:48.407 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2018-10-10 17:11:48.408 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2018-10-10 17:11:48.408 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2018-10-10 17:11:48.408 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2018-10-10 17:11:48.408 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2018-10-10 17:11:48.408 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2018-10-10 17:11:48.474 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2018-10-10 17:11:48.474 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, hibernate.c3p0.idle_test_period=3000, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/home/student/intellij/lib/idea_rt.jar:/home/student/intellij/plugins/junit/lib/junit-rt.jar:/home/student/intellij/plugins/junit/lib/junit5-rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/deploy.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-oracle/jre/lib/javaws.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfxswt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-oracle/jre/lib/plugin.jar:/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/home/student/IdeaProjects/HikerWebsiteIndieProject/target/test-classes:/home/student/IdeaProjects/HikerWebsiteIndieProject/target/classes:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar:/home/student/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/student/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/jboss-transaction-api_1.2_spec-1.0.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.0/classmate-1.3.0.jar:/home/student/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.2.12.Final/hibernate-c3p0-5.2.12.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.11/mchange-commons-java-0.2.11.jar:/home/student/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/intellij/lib/idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=http://java.oracle.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=1.8, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit5 edu.matc.persistence.HikingTrailsDaoTest,insertSuccess, sun.cpu.endian=little, hibernate.c3p0.max_statements=50, user.home=/home/student, user.language=en, java.specification.vendor=Oracle Corporation, java.home=/usr/lib/jvm/java-8-oracle/jre, file.separator=/, line.separator=
+, hibernate.c3p0.timeout=300, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=1.8.0_144-b01, user.name=student, path.separator=:, hibernate.connection.username=root, os.version=4.4.0-57-generic, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/HikerWebsiteDB, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, show_sql=true, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/tmp, java.version=1.8.0_144, user.dir=/home/student/IdeaProjects/HikerWebsiteIndieProject, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.print.PSPrinterJob, sun.os.patch.level=unknown, connection.driver_class=com.mysql.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@560cbf1a, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.144-b01, hibernate.bytecode.use_reflection_optimizer=false, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/HikerWebsiteDB, java.class.version=52.0}
+[DEBUG] 2018-10-10 17:11:48.505 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2018-10-10 17:11:48.506 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2018-10-10 17:11:48.507 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2018-10-10 17:11:48.554 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.HikerAccount] is safe
+[DEBUG] 2018-10-10 17:11:48.554 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.HikerAccount
+[DEBUG] 2018-10-10 17:11:48.569 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.HikerAccount] is safe
+[DEBUG] 2018-10-10 17:11:48.569 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.HikerAccount
+[DEBUG] 2018-10-10 17:11:48.637 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.HikingTrails] is safe
+[DEBUG] 2018-10-10 17:11:48.637 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.HikingTrails
+[DEBUG] 2018-10-10 17:11:48.638 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.HikingTrails] is safe
+[DEBUG] 2018-10-10 17:11:48.638 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.HikingTrails
+[DEBUG] 2018-10-10 17:11:48.658 [main] AbstractCollectionPersister - Static SQL for collection: edu.matc.entity.HikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:48.658 [main] AbstractCollectionPersister -  Row insert: update Hiking_Trails set hiker_account_id=? where id=?
+[DEBUG] 2018-10-10 17:11:48.658 [main] AbstractCollectionPersister -  Row update: update Hiking_Trails set  where id=?
+[DEBUG] 2018-10-10 17:11:48.658 [main] AbstractCollectionPersister -  Row delete: update Hiking_Trails set hiker_account_id=null where hiker_account_id=? and id=?
+[DEBUG] 2018-10-10 17:11:48.658 [main] AbstractCollectionPersister -  One-shot delete: update Hiking_Trails set hiker_account_id=null where hiker_account_id=?
+[DEBUG] 2018-10-10 17:11:48.662 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.HikerAccount
+[DEBUG] 2018-10-10 17:11:48.662 [main] AbstractEntityPersister -  Version select: select id from Hiker_Account where id =?
+[DEBUG] 2018-10-10 17:11:48.662 [main] AbstractEntityPersister -  Snapshot select: select hikeraccou_.id, hikeraccou_.city as city2_0_, hikeraccou_.email_address as email_ad3_0_, hikeraccou_.first_name as first_na4_0_, hikeraccou_.last_name as last_nam5_0_, hikeraccou_.state as state6_0_ from Hiker_Account hikeraccou_ where hikeraccou_.id=?
+[DEBUG] 2018-10-10 17:11:48.662 [main] AbstractEntityPersister -  Insert 0: insert into Hiker_Account (city, email_address, first_name, last_name, state, id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-10-10 17:11:48.662 [main] AbstractEntityPersister -  Update 0: update Hiker_Account set city=?, email_address=?, first_name=?, last_name=?, state=? where id=?
+[DEBUG] 2018-10-10 17:11:48.662 [main] AbstractEntityPersister -  Delete 0: delete from Hiker_Account where id=?
+[DEBUG] 2018-10-10 17:11:48.662 [main] AbstractEntityPersister -  Identity insert: insert into Hiker_Account (city, email_address, first_name, last_name, state) values (?, ?, ?, ?, ?)
+[DEBUG] 2018-10-10 17:11:48.682 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@26f1249d]
+[DEBUG] 2018-10-10 17:11:48.683 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.683 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.683 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.683 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.686 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4943defe]
+[DEBUG] 2018-10-10 17:11:48.688 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2617f816]
+[DEBUG] 2018-10-10 17:11:48.689 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.hikerAccount
+[DEBUG] 2018-10-10 17:11:48.689 [main] MetamodelGraphWalker - Property path deemed to be circular : hikingTrails.hikerAccount
+[DEBUG] 2018-10-10 17:11:48.689 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailDescription
+[DEBUG] 2018-10-10 17:11:48.689 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailDetails
+[DEBUG] 2018-10-10 17:11:48.689 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.690 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailFreatures
+[DEBUG] 2018-10-10 17:11:48.691 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailHeadName
+[DEBUG] 2018-10-10 17:11:48.691 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailLength
+[DEBUG] 2018-10-10 17:11:48.691 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailRating
+[DEBUG] 2018-10-10 17:11:48.691 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.691 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.691 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.705 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.710 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(hikingTrails)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=edu.matc.entity.HikerAccount.hikingTrails)
+                - SQL table alias mapping - hikingtrai1_
+                - alias suffix - 1_
+                - suffixed key columns - {hiker_ac9_1_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_1_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.HikingTrails)
+                      - SQL table alias mapping - hikingtrai1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_1_2_}
+
+[DEBUG] 2018-10-10 17:11:48.716 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [NONE]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_, hikingtrai1_.hiker_account_id as hiker_ac9_1_1_, hikingtrai1_.id as id1_1_1_, hikingtrai1_.id as id1_1_2_, hikingtrai1_.hiker_account_id as hiker_ac9_1_2_, hikingtrai1_.trail_description as trail_de2_1_2_, hikingtrai1_.trail_details as trail_de3_1_2_, hikingtrai1_.trail_difficulty as trail_di4_1_2_, hikingtrai1_.trail_features as trail_fe5_1_2_, hikingtrai1_.trail_head_name as trail_he6_1_2_, hikingtrai1_.trail_length as trail_le7_1_2_, hikingtrai1_.trail_rating as trail_ra8_1_2_ from Hiker_Account hikeraccou0_ left outer join Hiking_Trails hikingtrai1_ on hikeraccou0_.id=hikingtrai1_.hiker_account_id where hikeraccou0_.id=?
+[DEBUG] 2018-10-10 17:11:48.716 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2c383e33]
+[DEBUG] 2018-10-10 17:11:48.716 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.716 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.716 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.716 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.716 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@76304b46]
+[DEBUG] 2018-10-10 17:11:48.716 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2fa3be26]
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.hikerAccount
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Property path deemed to be circular : hikingTrails.hikerAccount
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailDescription
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailDetails
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailFreatures
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailHeadName
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailLength
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails.trailRating
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.717 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.717 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.717 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.718 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(hikingTrails)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=edu.matc.entity.HikerAccount.hikingTrails)
+                - SQL table alias mapping - hikingtrai1_
+                - alias suffix - 1_
+                - suffixed key columns - {hiker_ac9_1_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_1_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.HikingTrails)
+                      - SQL table alias mapping - hikingtrai1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_1_2_}
+
+[DEBUG] 2018-10-10 17:11:48.718 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [READ]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_, hikingtrai1_.hiker_account_id as hiker_ac9_1_1_, hikingtrai1_.id as id1_1_1_, hikingtrai1_.id as id1_1_2_, hikingtrai1_.hiker_account_id as hiker_ac9_1_2_, hikingtrai1_.trail_description as trail_de2_1_2_, hikingtrai1_.trail_details as trail_de3_1_2_, hikingtrai1_.trail_difficulty as trail_di4_1_2_, hikingtrai1_.trail_features as trail_fe5_1_2_, hikingtrai1_.trail_head_name as trail_he6_1_2_, hikingtrai1_.trail_length as trail_le7_1_2_, hikingtrai1_.trail_rating as trail_ra8_1_2_ from Hiker_Account hikeraccou0_ left outer join Hiking_Trails hikingtrai1_ on hikeraccou0_.id=hikingtrai1_.hiker_account_id where hikeraccou0_.id=?
+[DEBUG] 2018-10-10 17:11:48.718 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4e6d7365]
+[DEBUG] 2018-10-10 17:11:48.718 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.718 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.718 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.718 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.718 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@d4602a]
+[DEBUG] 2018-10-10 17:11:48.718 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@21ae6e73]
+[DEBUG] 2018-10-10 17:11:48.718 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.718 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.718 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.719 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.720 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-10 17:11:48.720 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [UPGRADE]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_ from Hiker_Account hikeraccou0_ where hikeraccou0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.721 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@47dd778]
+[DEBUG] 2018-10-10 17:11:48.723 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.725 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.725 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.725 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.727 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@36a7abe1]
+[DEBUG] 2018-10-10 17:11:48.728 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64a896b0]
+[DEBUG] 2018-10-10 17:11:48.728 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.728 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.728 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.728 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.728 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-10 17:11:48.728 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [UPGRADE_NOWAIT]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_ from Hiker_Account hikeraccou0_ where hikeraccou0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.728 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@e044b4a]
+[DEBUG] 2018-10-10 17:11:48.728 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.728 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.728 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.728 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.728 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1adb7478]
+[DEBUG] 2018-10-10 17:11:48.729 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3ae66c85]
+[DEBUG] 2018-10-10 17:11:48.729 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.729 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.729 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.729 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.729 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-10 17:11:48.729 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [UPGRADE_SKIPLOCKED]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_ from Hiker_Account hikeraccou0_ where hikeraccou0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.729 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16943e88]
+[DEBUG] 2018-10-10 17:11:48.729 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.729 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.729 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.729 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.729 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@73d6d0c]
+[DEBUG] 2018-10-10 17:11:48.729 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@e36bb2a]
+[DEBUG] 2018-10-10 17:11:48.729 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.729 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.729 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.729 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.730 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-10 17:11:48.730 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [FORCE]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_ from Hiker_Account hikeraccou0_ where hikeraccou0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.730 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3961a41a]
+[DEBUG] 2018-10-10 17:11:48.730 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.730 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.730 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.730 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.730 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@367795c7]
+[DEBUG] 2018-10-10 17:11:48.730 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@d2387c8]
+[DEBUG] 2018-10-10 17:11:48.730 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.730 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.730 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.730 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.730 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-10 17:11:48.730 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [PESSIMISTIC_READ]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_ from Hiker_Account hikeraccou0_ where hikeraccou0_.id=? lock in share mode
+[DEBUG] 2018-10-10 17:11:48.731 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3956b302]
+[DEBUG] 2018-10-10 17:11:48.731 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.731 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.731 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.731 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.731 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1fd386c3]
+[DEBUG] 2018-10-10 17:11:48.731 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@edf4f36]
+[DEBUG] 2018-10-10 17:11:48.731 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.731 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.731 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.731 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.732 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-10 17:11:48.732 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [PESSIMISTIC_WRITE]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_ from Hiker_Account hikeraccou0_ where hikeraccou0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.732 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29d334c]
+[DEBUG] 2018-10-10 17:11:48.732 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.732 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.732 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.732 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.732 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@13e9f2e2]
+[DEBUG] 2018-10-10 17:11:48.732 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@673bb956]
+[DEBUG] 2018-10-10 17:11:48.732 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.733 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.733 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.733 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.733 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-10 17:11:48.733 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [PESSIMISTIC_FORCE_INCREMENT]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_ from Hiker_Account hikeraccou0_ where hikeraccou0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.733 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@cd7f1ae]
+[DEBUG] 2018-10-10 17:11:48.733 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.733 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.733 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.733 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.733 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3c4bc9fc]
+[DEBUG] 2018-10-10 17:11:48.733 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@680362a]
+[DEBUG] 2018-10-10 17:11:48.733 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.733 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.733 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.734 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.734 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-10 17:11:48.734 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [OPTIMISTIC]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_ from Hiker_Account hikeraccou0_ where hikeraccou0_.id=?
+[DEBUG] 2018-10-10 17:11:48.734 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3569edd5]
+[DEBUG] 2018-10-10 17:11:48.734 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-10-10 17:11:48.734 [main] MetamodelGraphWalker - Visiting attribute path : emailAddress
+[DEBUG] 2018-10-10 17:11:48.734 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2018-10-10 17:11:48.734 [main] MetamodelGraphWalker - Visiting attribute path : hikingTrails
+[DEBUG] 2018-10-10 17:11:48.734 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7d0332e1]
+[DEBUG] 2018-10-10 17:11:48.734 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7a356a0d]
+[DEBUG] 2018-10-10 17:11:48.734 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2018-10-10 17:11:48.734 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-10-10 17:11:48.734 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.734 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.741 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikerAccount)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:0>, path=edu.matc.entity.HikerAccount)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:1>, path=edu.matc.entity.HikerAccount.hikingTrails)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:2>, path=edu.matc.entity.HikerAccount.hikingTrails.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikerAccount)
+          - SQL table alias mapping - hikeraccou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-10-10 17:11:48.741 [main] EntityLoader - Static select for entity edu.matc.entity.HikerAccount [OPTIMISTIC_FORCE_INCREMENT]: select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_ from Hiker_Account hikeraccou0_ where hikeraccou0_.id=?
+[DEBUG] 2018-10-10 17:11:48.757 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.HikerAccount: select hikeraccou0_.id as id1_0_1_, hikeraccou0_.city as city2_0_1_, hikeraccou0_.email_address as email_ad3_0_1_, hikeraccou0_.first_name as first_na4_0_1_, hikeraccou0_.last_name as last_nam5_0_1_, hikeraccou0_.state as state6_0_1_, hikingtrai1_.hiker_account_id as hiker_ac9_1_3_, hikingtrai1_.id as id1_1_3_, hikingtrai1_.id as id1_1_0_, hikingtrai1_.hiker_account_id as hiker_ac9_1_0_, hikingtrai1_.trail_description as trail_de2_1_0_, hikingtrai1_.trail_details as trail_de3_1_0_, hikingtrai1_.trail_difficulty as trail_di4_1_0_, hikingtrai1_.trail_features as trail_fe5_1_0_, hikingtrai1_.trail_head_name as trail_he6_1_0_, hikingtrai1_.trail_length as trail_le7_1_0_, hikingtrai1_.trail_rating as trail_ra8_1_0_ from Hiker_Account hikeraccou0_ left outer join Hiking_Trails hikingtrai1_ on hikeraccou0_.id=hikingtrai1_.hiker_account_id where hikeraccou0_.id=?
+[DEBUG] 2018-10-10 17:11:48.758 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.HikerAccount: select hikeraccou0_.id as id1_0_1_, hikeraccou0_.city as city2_0_1_, hikeraccou0_.email_address as email_ad3_0_1_, hikeraccou0_.first_name as first_na4_0_1_, hikeraccou0_.last_name as last_nam5_0_1_, hikeraccou0_.state as state6_0_1_, hikingtrai1_.hiker_account_id as hiker_ac9_1_3_, hikingtrai1_.id as id1_1_3_, hikingtrai1_.id as id1_1_0_, hikingtrai1_.hiker_account_id as hiker_ac9_1_0_, hikingtrai1_.trail_description as trail_de2_1_0_, hikingtrai1_.trail_details as trail_de3_1_0_, hikingtrai1_.trail_difficulty as trail_di4_1_0_, hikingtrai1_.trail_features as trail_fe5_1_0_, hikingtrai1_.trail_head_name as trail_he6_1_0_, hikingtrai1_.trail_length as trail_le7_1_0_, hikingtrai1_.trail_rating as trail_ra8_1_0_ from Hiker_Account hikeraccou0_ left outer join Hiking_Trails hikingtrai1_ on hikeraccou0_.id=hikingtrai1_.hiker_account_id where hikeraccou0_.id=?
+[DEBUG] 2018-10-10 17:11:48.758 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.HikingTrails
+[DEBUG] 2018-10-10 17:11:48.758 [main] AbstractEntityPersister -  Version select: select id from Hiking_Trails where id =?
+[DEBUG] 2018-10-10 17:11:48.758 [main] AbstractEntityPersister -  Snapshot select: select hikingtrai_.id, hikingtrai_.hiker_account_id as hiker_ac9_1_, hikingtrai_.trail_description as trail_de2_1_, hikingtrai_.trail_details as trail_de3_1_, hikingtrai_.trail_difficulty as trail_di4_1_, hikingtrai_.trail_features as trail_fe5_1_, hikingtrai_.trail_head_name as trail_he6_1_, hikingtrai_.trail_length as trail_le7_1_, hikingtrai_.trail_rating as trail_ra8_1_ from Hiking_Trails hikingtrai_ where hikingtrai_.id=?
+[DEBUG] 2018-10-10 17:11:48.758 [main] AbstractEntityPersister -  Insert 0: insert into Hiking_Trails (hiker_account_id, trail_description, trail_details, trail_difficulty, trail_features, trail_head_name, trail_length, trail_rating, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-10-10 17:11:48.758 [main] AbstractEntityPersister -  Update 0: update Hiking_Trails set hiker_account_id=?, trail_description=?, trail_details=?, trail_difficulty=?, trail_features=?, trail_head_name=?, trail_length=?, trail_rating=? where id=?
+[DEBUG] 2018-10-10 17:11:48.758 [main] AbstractEntityPersister -  Delete 0: delete from Hiking_Trails where id=?
+[DEBUG] 2018-10-10 17:11:48.758 [main] AbstractEntityPersister -  Identity insert: insert into Hiking_Trails (hiker_account_id, trail_description, trail_details, trail_difficulty, trail_features, trail_head_name, trail_length, trail_rating) values (?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-10-10 17:11:48.758 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a43d133]
+[DEBUG] 2018-10-10 17:11:48.759 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.759 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f2afe62]
+[DEBUG] 2018-10-10 17:11:48.760 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.city
+[DEBUG] 2018-10-10 17:11:48.760 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.emailAddress
+[DEBUG] 2018-10-10 17:11:48.760 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.firstName
+[DEBUG] 2018-10-10 17:11:48.760 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:48.760 [main] MetamodelGraphWalker - Property path deemed to be circular : hikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:48.760 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.lastName
+[DEBUG] 2018-10-10 17:11:48.760 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.state
+[DEBUG] 2018-10-10 17:11:48.761 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.761 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.761 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.761 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.761 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.761 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.761 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.761 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.763 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.766 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(hikerAccount)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.HikerAccount)
+                - SQL table alias mapping - hikeraccou1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2018-10-10 17:11:48.766 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [NONE]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_, hikeraccou1_.id as id1_0_1_, hikeraccou1_.city as city2_0_1_, hikeraccou1_.email_address as email_ad3_0_1_, hikeraccou1_.first_name as first_na4_0_1_, hikeraccou1_.last_name as last_nam5_0_1_, hikeraccou1_.state as state6_0_1_ from Hiking_Trails hikingtrai0_ left outer join Hiker_Account hikeraccou1_ on hikingtrai0_.hiker_account_id=hikeraccou1_.id where hikingtrai0_.id=?
+[DEBUG] 2018-10-10 17:11:48.766 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68105edc]
+[DEBUG] 2018-10-10 17:11:48.766 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.766 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@38b972d7]
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.city
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.emailAddress
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.firstName
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Property path deemed to be circular : hikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.lastName
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount.state
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.767 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.767 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.767 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(hikerAccount)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.HikerAccount)
+                - SQL table alias mapping - hikeraccou1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2018-10-10 17:11:48.767 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [READ]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_, hikeraccou1_.id as id1_0_1_, hikeraccou1_.city as city2_0_1_, hikeraccou1_.email_address as email_ad3_0_1_, hikeraccou1_.first_name as first_na4_0_1_, hikeraccou1_.last_name as last_nam5_0_1_, hikeraccou1_.state as state6_0_1_ from Hiking_Trails hikingtrai0_ left outer join Hiker_Account hikeraccou1_ on hikingtrai0_.hiker_account_id=hikeraccou1_.id where hikingtrai0_.id=?
+[DEBUG] 2018-10-10 17:11:48.767 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3935e9a8]
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.767 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5b56b654]
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.767 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.768 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.768 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.768 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-10-10 17:11:48.768 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [UPGRADE]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.768 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@452c8a40]
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.768 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29006752]
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.768 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.768 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.768 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-10-10 17:11:48.768 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [UPGRADE_NOWAIT]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.768 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@470a9030]
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.768 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@27494e46]
+[DEBUG] 2018-10-10 17:11:48.768 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.769 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.769 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.769 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-10-10 17:11:48.769 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [UPGRADE_SKIPLOCKED]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.769 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@d59970a]
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.769 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@53b98ff6]
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.769 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.769 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.769 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-10-10 17:11:48.769 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [FORCE]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.769 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e6fd0b9]
+[DEBUG] 2018-10-10 17:11:48.769 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.770 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@697446d4]
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.770 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.770 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.770 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-10-10 17:11:48.770 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [PESSIMISTIC_READ]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=? lock in share mode
+[DEBUG] 2018-10-10 17:11:48.770 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76adb233]
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.770 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@36453307]
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.770 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.770 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.770 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.770 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-10-10 17:11:48.770 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [PESSIMISTIC_WRITE]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.770 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7dcc91fd]
+[DEBUG] 2018-10-10 17:11:48.771 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.776 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6a9287b1]
+[DEBUG] 2018-10-10 17:11:48.776 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.776 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.776 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.776 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.776 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.776 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.776 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.776 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.776 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.776 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-10-10 17:11:48.776 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [PESSIMISTIC_FORCE_INCREMENT]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=? for update
+[DEBUG] 2018-10-10 17:11:48.776 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@75504cef]
+[DEBUG] 2018-10-10 17:11:48.777 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.777 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56193c7d]
+[DEBUG] 2018-10-10 17:11:48.777 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.777 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.777 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.777 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.778 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.778 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.778 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.778 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.778 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.778 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-10-10 17:11:48.779 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [OPTIMISTIC]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=?
+[DEBUG] 2018-10-10 17:11:48.779 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@28c88600]
+[DEBUG] 2018-10-10 17:11:48.779 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.779 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@607b2792]
+[DEBUG] 2018-10-10 17:11:48.779 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.779 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.779 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.779 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.779 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.779 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.779 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.779 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.779 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.779 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.HikingTrails)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:0>, path=edu.matc.entity.HikingTrails)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.HikerAccount, querySpaceUid=<gen:1>, path=edu.matc.entity.HikingTrails.hikerAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.HikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-10-10 17:11:48.779 [main] EntityLoader - Static select for entity edu.matc.entity.HikingTrails [OPTIMISTIC_FORCE_INCREMENT]: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=?
+[DEBUG] 2018-10-10 17:11:48.779 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.HikingTrails: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=?
+[DEBUG] 2018-10-10 17:11:48.779 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.HikingTrails: select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.id=?
+[DEBUG] 2018-10-10 17:11:48.785 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5d28bcd5]
+[DEBUG] 2018-10-10 17:11:48.785 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7882c44a]
+[DEBUG] 2018-10-10 17:11:48.786 [main] MetamodelGraphWalker - Visiting attribute path : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.786 [main] MetamodelGraphWalker - Property path deemed to be circular : hikerAccount
+[DEBUG] 2018-10-10 17:11:48.786 [main] MetamodelGraphWalker - Visiting attribute path : trailDescription
+[DEBUG] 2018-10-10 17:11:48.786 [main] MetamodelGraphWalker - Visiting attribute path : trailDetails
+[DEBUG] 2018-10-10 17:11:48.786 [main] MetamodelGraphWalker - Visiting attribute path : trailDifficulty
+[DEBUG] 2018-10-10 17:11:48.786 [main] MetamodelGraphWalker - Visiting attribute path : trailFreatures
+[DEBUG] 2018-10-10 17:11:48.786 [main] MetamodelGraphWalker - Visiting attribute path : trailHeadName
+[DEBUG] 2018-10-10 17:11:48.786 [main] MetamodelGraphWalker - Visiting attribute path : trailLength
+[DEBUG] 2018-10-10 17:11:48.786 [main] MetamodelGraphWalker - Visiting attribute path : trailRating
+[DEBUG] 2018-10-10 17:11:48.786 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-10-10 17:11:48.787 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-10-10 17:11:48.788 [main] LoadPlanTreePrinter - LoadPlan(collection=edu.matc.entity.HikerAccount.hikingTrails)
+    - Returns
+       - CollectionReturnImpl(collection=edu.matc.entity.HikerAccount.hikingTrails, querySpaceUid=<gen:0>, path=[edu.matc.entity.HikerAccount.hikingTrails])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.HikingTrails, querySpaceUid=<gen:1>, path=[edu.matc.entity.HikerAccount.hikingTrails].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=edu.matc.entity.HikerAccount.hikingTrails)
+          - SQL table alias mapping - hikingtrai0_
+          - alias suffix - 0_
+          - suffixed key columns - {hiker_ac9_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.HikingTrails)
+                - SQL table alias mapping - hikingtrai0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2018-10-10 17:11:48.788 [main] CollectionLoader - Static select for collection edu.matc.entity.HikerAccount.hikingTrails: select hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.id as id1_1_0_, hikingtrai0_.id as id1_1_1_, hikingtrai0_.hiker_account_id as hiker_ac9_1_1_, hikingtrai0_.trail_description as trail_de2_1_1_, hikingtrai0_.trail_details as trail_de3_1_1_, hikingtrai0_.trail_difficulty as trail_di4_1_1_, hikingtrai0_.trail_features as trail_fe5_1_1_, hikingtrai0_.trail_head_name as trail_he6_1_1_, hikingtrai0_.trail_length as trail_le7_1_1_, hikingtrai0_.trail_rating as trail_ra8_1_1_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.hiker_account_id=?
+[DEBUG] 2018-10-10 17:11:48.810 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2018-10-10 17:11:48.810 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2018-10-10 17:11:48.810 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2018-10-10 17:11:48.816 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2018-10-10 17:11:48.818 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2018-10-10 17:11:48.818 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2018-10-10 17:11:48.820 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@49096b06
+[DEBUG] 2018-10-10 17:11:48.821 [main] SessionFactoryRegistry - Registering SessionFactory: e9e08155-dc75-45dc-a742-1d6942f0c542 (<unnamed>)
+[DEBUG] 2018-10-10 17:11:48.821 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2018-10-10 17:11:48.933 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2018-10-10 17:11:48.959 [main] SQL - select hikeraccou0_.id as id1_0_0_, hikeraccou0_.city as city2_0_0_, hikeraccou0_.email_address as email_ad3_0_0_, hikeraccou0_.first_name as first_na4_0_0_, hikeraccou0_.last_name as last_nam5_0_0_, hikeraccou0_.state as state6_0_0_, hikingtrai1_.hiker_account_id as hiker_ac9_1_1_, hikingtrai1_.id as id1_1_1_, hikingtrai1_.id as id1_1_2_, hikingtrai1_.hiker_account_id as hiker_ac9_1_2_, hikingtrai1_.trail_description as trail_de2_1_2_, hikingtrai1_.trail_details as trail_de3_1_2_, hikingtrai1_.trail_difficulty as trail_di4_1_2_, hikingtrai1_.trail_features as trail_fe5_1_2_, hikingtrai1_.trail_head_name as trail_he6_1_2_, hikingtrai1_.trail_length as trail_le7_1_2_, hikingtrai1_.trail_rating as trail_ra8_1_2_ from Hiker_Account hikeraccou0_ left outer join Hiking_Trails hikingtrai1_ on hikeraccou0_.id=hikingtrai1_.hiker_account_id where hikeraccou0_.id=?
+[DEBUG] 2018-10-10 17:11:48.980 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2018-10-10 17:11:48.982 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2018-10-10 17:11:48.989 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [edu.matc.entity.HikerAccount.hikingTrails#1]
+[DEBUG] 2018-10-10 17:11:49.001 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.HikerAccount#1]
+[DEBUG] 2018-10-10 17:11:49.003 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.HikerAccount#1]
+[DEBUG] 2018-10-10 17:11:49.003 [main] CollectionLoadContext - 1 collections were found in result set for role: edu.matc.entity.HikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:49.004 [main] CollectionLoadContext - Collection fully initialized: [edu.matc.entity.HikerAccount.hikingTrails#1]
+[DEBUG] 2018-10-10 17:11:49.004 [main] CollectionLoadContext - 1 collections initialized for role: edu.matc.entity.HikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:49.005 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-10-10 17:11:49.005 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.HikerAccount#1
+[DEBUG] 2018-10-10 17:11:49.005 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-10-10 17:11:49.010 [main] TransactionImpl - begin
+[DEBUG] 2018-10-10 17:11:49.019 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2018-10-10 17:11:49.020 [main] SQL - insert into Hiking_Trails (hiker_account_id, trail_description, trail_details, trail_difficulty, trail_features, trail_head_name, trail_length, trail_rating) values (?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-10-10 17:11:49.040 [main] IdentifierGeneratorHelper - Natively generated identity: 1
+[DEBUG] 2018-10-10 17:11:49.040 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-10-10 17:11:49.041 [main] TransactionImpl - committing
+[DEBUG] 2018-10-10 17:11:49.042 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2018-10-10 17:11:49.042 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2018-10-10 17:11:49.043 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2018-10-10 17:11:49.043 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2018-10-10 17:11:49.044 [main] EntityPrinter - Listing entities:
+[DEBUG] 2018-10-10 17:11:49.044 [main] EntityPrinter - edu.matc.entity.HikingTrails{trailDetails=Greate for kids, trailDescription=long trail, trailFreatures=Trees, trailHeadName=Trailhead1, trailRating=4, hikerAccount=edu.matc.entity.HikerAccount#1, trailDifficulty=5, id=1, trailLength=1}
+[DEBUG] 2018-10-10 17:11:49.046 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-10-10 17:11:49.046 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-10-10 17:11:49.051 [main] SQL - select hikingtrai0_.id as id1_1_0_, hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.trail_description as trail_de2_1_0_, hikingtrai0_.trail_details as trail_de3_1_0_, hikingtrai0_.trail_difficulty as trail_di4_1_0_, hikingtrai0_.trail_features as trail_fe5_1_0_, hikingtrai0_.trail_head_name as trail_he6_1_0_, hikingtrai0_.trail_length as trail_le7_1_0_, hikingtrai0_.trail_rating as trail_ra8_1_0_, hikeraccou1_.id as id1_0_1_, hikeraccou1_.city as city2_0_1_, hikeraccou1_.email_address as email_ad3_0_1_, hikeraccou1_.first_name as first_na4_0_1_, hikeraccou1_.last_name as last_nam5_0_1_, hikeraccou1_.state as state6_0_1_ from Hiking_Trails hikingtrai0_ left outer join Hiker_Account hikeraccou1_ on hikingtrai0_.hiker_account_id=hikeraccou1_.id where hikingtrai0_.id=?
+[DEBUG] 2018-10-10 17:11:49.053 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2018-10-10 17:11:49.062 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2018-10-10 17:11:49.063 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.HikingTrails#1]
+[DEBUG] 2018-10-10 17:11:49.063 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.HikingTrails#1]
+[DEBUG] 2018-10-10 17:11:49.063 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.HikerAccount#1]
+[DEBUG] 2018-10-10 17:11:49.064 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.HikerAccount#1]
+[DEBUG] 2018-10-10 17:11:49.064 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-10-10 17:11:49.065 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [edu.matc.entity.HikerAccount.hikingTrails#1]
+[DEBUG] 2018-10-10 17:11:49.065 [main] SQL - select hikingtrai0_.hiker_account_id as hiker_ac9_1_0_, hikingtrai0_.id as id1_1_0_, hikingtrai0_.id as id1_1_1_, hikingtrai0_.hiker_account_id as hiker_ac9_1_1_, hikingtrai0_.trail_description as trail_de2_1_1_, hikingtrai0_.trail_details as trail_de3_1_1_, hikingtrai0_.trail_difficulty as trail_di4_1_1_, hikingtrai0_.trail_features as trail_fe5_1_1_, hikingtrai0_.trail_head_name as trail_he6_1_1_, hikingtrai0_.trail_length as trail_le7_1_1_, hikingtrai0_.trail_rating as trail_ra8_1_1_ from Hiking_Trails hikingtrai0_ where hikingtrai0_.hiker_account_id=?
+[DEBUG] 2018-10-10 17:11:49.067 [main] ResultSetProcessorImpl - Preparing collection intializer : [edu.matc.entity.HikerAccount.hikingTrails#1]
+[DEBUG] 2018-10-10 17:11:49.067 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2018-10-10 17:11:49.071 [main] CollectionReferenceInitializerImpl - Found row of collection: [edu.matc.entity.HikerAccount.hikingTrails#1]
+[DEBUG] 2018-10-10 17:11:49.072 [main] CollectionLoadContext - 1 collections were found in result set for role: edu.matc.entity.HikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:49.072 [main] CollectionLoadContext - Collection fully initialized: [edu.matc.entity.HikerAccount.hikingTrails#1]
+[DEBUG] 2018-10-10 17:11:49.072 [main] CollectionLoadContext - 1 collections initialized for role: edu.matc.entity.HikerAccount.hikingTrails
+[DEBUG] 2018-10-10 17:11:49.072 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-10-10 17:11:49.072 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2018-10-10 17:11:49.072 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.HikingTrails#1
+[DEBUG] 2018-10-10 17:11:49.072 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
